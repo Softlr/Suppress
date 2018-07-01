@@ -7,7 +7,7 @@
 	<CodeAnalysisRuleSet>Softlr.Suppress.ruleset</CodeAnalysisRuleSet>
 	<LangVersion>latest</LangVersion>
 	<Authors>Softlr</Authors>
-    <Description>Contains Selenium WebDriver extensions including jQuery, Sizzle selector support.</Description>
+    <Description>Constants for easy suppression of C# analyzers warnings and errors.</Description>
   </PropertyGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\..\_analysis\stylecop.json" />
