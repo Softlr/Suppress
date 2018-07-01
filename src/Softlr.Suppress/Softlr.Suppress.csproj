@@ -8,6 +8,7 @@
 	<LangVersion>latest</LangVersion>
 	<Authors>Softlr</Authors>
     <Description>Constants for easy suppression of C# analyzers warnings and errors.</Description>
+    <RootNamespace>Softlr</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\..\_analysis\stylecop.json" />

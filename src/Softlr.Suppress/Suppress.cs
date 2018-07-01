@@ -1,4 +1,4 @@
-namespace Softlr.Suppress
+namespace Softlr
 {
     using System.Diagnostics.CodeAnalysis;
     using JetBrains.Annotations;
