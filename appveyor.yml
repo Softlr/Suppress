@@ -8,7 +8,7 @@ skip_branch_with_pr: true
 skip_commits:
   message: /\[(skip ci|ci skip)\]/
 
-version: 1.0.0.{build}
+version: 1.0.1.{build}
 image: Visual Studio 2017
   
 install:
@@ -29,7 +29,7 @@ build_script:
   - dotnet build -c Release
 
 after_build:
-  - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.0.0
+  - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.0.1
   - ps: SonarScanner.MSBuild end /d:sonar.login=$env:SonarQubeAccessToken
 
 artifacts:
@@ -44,7 +44,7 @@ deploy:
   - provider: GitHub
     on:
       branch: master
-    release: 1.0.0
+    release: 1.0.1
     artifact: /.*\.nupkg/
     auth_token:
       secure: r+IxpBcxWvxwGdiNvsHFEWa0wa8WPzw3uRi+1/ObwPoGS16bzG9FObtJIsFdmj0L
