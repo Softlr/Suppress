@@ -29,7 +29,7 @@ build_script:
   - dotnet build -c Release
 
 after_build:
-  - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER% /p:Version=1.0.0
+  - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.0.0
 
 artifacts:
   - path: .\*.nupkg
