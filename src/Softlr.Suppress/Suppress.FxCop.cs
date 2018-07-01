@@ -1,5 +1,8 @@
 namespace Softlr.Suppress
 {
+    using System.Diagnostics.CodeAnalysis;
+
+    [SuppressMessage(SONARQUBE, S2339)]
     public static partial class Suppress
     {
         public const string CA1000 = "CA1000:Do not declare static members on generic types";

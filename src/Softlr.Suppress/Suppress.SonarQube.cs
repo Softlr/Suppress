@@ -1,5 +1,8 @@
 namespace Softlr.Suppress
 {
+    using System.Diagnostics.CodeAnalysis;
+
+    [SuppressMessage(SONARQUBE, S2339)]
     public static partial class Suppress
     {
         public const string S100 = "S100:Methods and properties should be named in camel case";

@@ -5,6 +5,7 @@ namespace Softlr.Suppress
 
     [PublicAPI]
     [ExcludeFromCodeCoverage]
+    [SuppressMessage(SONARQUBE, S2339)]
     public static partial class Suppress
     {
         public const string CODE_CRACKER = "CodeCracker.CSharp";

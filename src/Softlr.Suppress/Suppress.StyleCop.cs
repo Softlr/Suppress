@@ -2,6 +2,7 @@ namespace Softlr.Suppress
 {
     using System.Diagnostics.CodeAnalysis;
 
+    [SuppressMessage(SONARQUBE, S2339)]
     public static partial class Suppress
     {
         public const string SA0001 = "SA0001:XmlCommentAnalysisDisabled";
