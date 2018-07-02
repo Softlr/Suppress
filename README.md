@@ -20,25 +20,31 @@ Install-Package Softlr.Suppress
 ```
 
 # Usage
-Simply reference specific constant from the `Softlr.Suppress` class in `SuppressMessageAttribute` like so:
+Simply reference specific constant from the `Softlr.Suppress` class in `SuppressMessageAttribute` like so
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
 
-[SuppressMessage(Softl.Suppress.SONARQUBE, Softl.Suppress.S4018)]
+[SuppressMessage(Softl.Suppress.CODE_CRACKER, Softlr.Suppress.CC0001)]
+[SuppressMessage(Softl.Suppress.FXCOP, Softlr.Suppress.CA1000)]
+[SuppressMessage(Softl.Suppress.SONARQUBE, Softlr.Suppress.S100)]
+[SuppressMessage(Softl.Suppress.STYLECOP, Softlr.Suppress.SA1001)]
 public class MyClass
 {
     // ...
 }
 ```
 
-or for even better syntax use the `using static` to import all constants.
+or use the `using static` to import all constants
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
 using static Softlr.Suppress;
 
-[SuppressMessage(SONARQUBE, S4018)]
+[SuppressMessage(CODE_CRACKER, CC0001)]
+[SuppressMessage(FXCOP, CA1000)]
+[SuppressMessage(SONARQUBE, S100)]
+[SuppressMessage(STYLECOP, SA1001)]
 public class MyClass
 {
     // ...
