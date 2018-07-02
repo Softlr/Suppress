@@ -50,3 +50,12 @@ public class MyClass
     // ...
 }
 ```
+
+When referencing `Softlr.Suppress` library in a project that creates a NuGet package the reference for this library doesn't need to be defined as a NuGet dependency.
+If you are generating NuGet packages with project files, this can be achieved with `PrivateAssets` metadata.
+
+```
+<PackageReference Include="Softlr.Suppress" Version="1.0.0">
+    <PrivateAssets>all</PrivateAssets>
+</PackageReference>
+```
