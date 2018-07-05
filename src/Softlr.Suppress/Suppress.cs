@@ -1,7 +1,7 @@
 namespace Softlr
 {
-    using JetBrains.Annotations;
     using System.Diagnostics.CodeAnalysis;
+    using JetBrains.Annotations;
 
     [PublicAPI]
     [ExcludeFromCodeCoverage]
