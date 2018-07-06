@@ -247,7 +247,7 @@ namespace Softlr
         public const string S3257 = "S3257:Declarations and initializations should be as concise as possible";
         public const string S3261 = "S3261:Namespaces should not be empty";
         public const string S3262 = "S3262:params should be used on overrides";
-        public const string S3263 = "S3263:Static fields should appear in the order they must be initialized ";
+        public const string S3263 = "S3263:Static fields should appear in the order they must be initialized";
         public const string S3264 = "S3264:Events should be invoked";
         public const string S3265 = "S3265:Non-flags enums should not be used in bitwise operations";
         public const string S3330 = "S3330:HttpOnly should be set on cookies";
@@ -265,7 +265,7 @@ namespace Softlr
 
         public const string S3400 = "S3400:Methods should not return constants";
         public const string S3415 = "S3415:Assertion arguments should be passed in the correct order";
-        public const string S3427 = "S3427:Method overloads with default parameter values should not overlap ";
+        public const string S3427 = "S3427:Method overloads with default parameter values should not overlap";
         public const string S3431 = "S3431:[ExpectedException] should not be used";
         public const string S3433 = "S3433:Test method signatures should be correct";
 
@@ -298,7 +298,7 @@ namespace Softlr
         public const string S3597 = "S3597:ServiceContract and OperationContract attributes should be used together";
         public const string S3598 = "S3598:One-way OperationContract methods should have void return type";
         public const string S3600 = "S3600:params should not be introduced on overrides";
-        public const string S3603 = "S3603:Methods with Pure attribute should return a value ";
+        public const string S3603 = "S3603:Methods with Pure attribute should return a value";
         public const string S3604 = "S3604:Member initializer values should not be redundant";
         public const string S3610 = "S3610:Nullable type comparison should not be redundant";
         public const string S3626 = "S3626:Jump statements should not be redundant";
@@ -338,7 +338,7 @@ namespace Softlr
         public const string S3927 = "S3927:Serialization event handlers should be implemented correctly";
 
         public const string S3928 =
-            "S3928:Parameter names used into ArgumentException constructors should match an existing one ";
+            "S3928:Parameter names used into ArgumentException constructors should match an existing one";
 
         public const string S3956 = "S3956:Generic.List instances should not be part of public APIs";
         public const string S3962 = "S3962:static readonly constants should be const instead";
