@@ -247,6 +247,6 @@ namespace Softlr
         public const string CA2241 = "CA2241:Provide correct arguments to formatting methods";
         public const string CA2242 = "CA2242:Test for NaN correctly";
         public const string CA2243 = "CA2243:Attribute string literals should parse correctly";
-        public const string CA5122 = "CA5122 P/Invoke declarations should not be safe critical";
+        public const string CA5122 = "CA5122:P/Invoke declarations should not be safe critical";
     }
 }
