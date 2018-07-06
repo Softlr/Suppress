@@ -119,6 +119,10 @@ namespace Softlr
         public const string S1994 = "S1994:for loop increment clauses should modify the loops' counters";
         public const string S2068 = "S2068:Credentials should not be hard-coded";
         public const string S2070 = "S2070:SHA-1 and Message-Digest hash algorithms should not be used";
+        public const string S2076 = "S2076:OS commands should not be vulnerable to injection attacks";
+        public const string S2078 = "S2078:LDAP queries should not be vulnerable to injection attacks";
+        public const string S2083 = "S2083:I/O function calls should not be vulnerable to path injection attacks";
+        public const string S2091 = "S2091:XPath expressions should not be vulnerable to injection attacks";
         public const string S2092 = "S2092:Cookies should be secure";
         public const string S2114 = "S2114:Collections should not be passed as arguments to their own methods";
         public const string S2123 = "S2123:Values should not be uselessly incremented";
@@ -178,6 +182,7 @@ namespace Softlr
         public const string S2551 = "S2551:Types and this should not be used for locking";
         public const string S2583 = "S2583:Conditionally executed blocks should be reachable";
         public const string S2589 = "S2589:Boolean expressions should not be gratuitous";
+        public const string S2631 = "S2631:Regular expressions should not be vulnerable to Denial of Service attacks";
         public const string S2674 = "S2674:The length returned from a stream read should be checked";
         public const string S2681 = "S2681:Multiline blocks should be enclosed in curly braces";
         public const string S2688 = "S2688:NaN should not be used in comparisons";
