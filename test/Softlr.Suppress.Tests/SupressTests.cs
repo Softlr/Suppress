@@ -1,6 +1,7 @@
 namespace Softlr.Tests
 {
     using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
     using System.Linq;
     using FluentAssertions;
     using JetBrains.Annotations;
@@ -10,6 +11,7 @@ namespace Softlr.Tests
     public class SupressTests
     {
         [PublicAPI]
+        [ExcludeFromCodeCoverage]
         public static IEnumerable<object[]> Constants
         {
             get
