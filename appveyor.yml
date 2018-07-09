@@ -36,7 +36,7 @@ after_build:
 test_script:
   - dotnet test test\Softlr.Suppress.Tests -c Release --no-build
   - OpenCover.Console -register:user -target:dotnet.exe -targetargs:"test test\Softlr.Suppress.Tests -c Release --no-build" -output:coverage.xml -filter:"+[Softlr*]* -[*]*Exception* -[*Tests]* -[xunit*]*" -oldStyle
-  - ps: SonarScanner.MSBuild end /d:sonar.login=$env:SonarQubeAccessToken
+  - ps: SonarScanner.MSBuild end /d:"sonar.login=$env:SonarQubeAccessToken"
 
 after_test:
   - codecov -f coverage.xml
