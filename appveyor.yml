@@ -23,7 +23,7 @@ environment:
   SonarQubeAccessToken:
     secure: XSmBeuYpSGTzymlYQQFusHt9VfZAZonMVIvuDae5v8bu2z2DlNRqTY/gOM4+mr8z
   GitHubAccessToken:
-    secure: r+IxpBcxWvxwGdiNvsHFEWa0wa8WPzw3uRi+1/ObwPoGS16bzG9FObtJIsFdmj0L
+    secure: 8Gy1PBM+Uut51pq70mx1/OoAxxnW4meTwPCIcSwXfsmPAEje9Yp63rEOAAOXnWSq
 
 build_script:
   - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER) { SonarScanner.MSBuild begin /n:Softlr.Suppress /k:softlr.suppress /v:1.0 /d:sonar.host.url=https://sonarqube.com /d:sonar.organization=rayell-github /d:sonar.login=$env:SonarQubeAccessToken /d:sonar.analysis.mode=preview /d:sonar.github.pullRequest=$env:APPVEYOR_PULL_REQUEST_NUMBER /d:sonar.github.repository=Softlr/Softlr.Suppress /d:sonar.github.oauth=$env:GitHubAccessToken }
@@ -57,4 +57,4 @@ deploy:
     release: 1.1.0
     artifact: /.*\.nupkg/
     auth_token:
-      secure: r+IxpBcxWvxwGdiNvsHFEWa0wa8WPzw3uRi+1/ObwPoGS16bzG9FObtJIsFdmj0L
+      secure: 8Gy1PBM+Uut51pq70mx1/OoAxxnW4meTwPCIcSwXfsmPAEje9Yp63rEOAAOXnWSq
