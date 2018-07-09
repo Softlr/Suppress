@@ -6,5 +6,5 @@ os:
 dotnet: 2.1.301
 script:
   - dotnet restore
-  - dotnet build
-  - dotnet test
+  - dotnet build -c Release
+  - dotnet test -c Release --no-build
