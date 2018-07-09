@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softlr.Suppress", "src\Softlr.Suppress\Softlr.Suppress.csproj", "{0A96FBC0-FB4A-49F7-A4ED-EFA6D4E56AC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softlr.Suppress", "src\Softlr.Suppress\Softlr.Suppress.csproj", "{0A96FBC0-FB4A-49F7-A4ED-EFA6D4E56AC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F1C9E1E9-8194-49D0-8A14-F812B14B855A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EA9029B0-EA25-4081-8DD6-2FF38C70DB06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softlr.Suppress.Tests", "test\Softlr.Suppress.Tests\Softlr.Suppress.Tests.csproj", "{C97B2B14-B7A4-4798-AE0F-2D11EA35BDC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{0A96FBC0-FB4A-49F7-A4ED-EFA6D4E56AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A96FBC0-FB4A-49F7-A4ED-EFA6D4E56AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A96FBC0-FB4A-49F7-A4ED-EFA6D4E56AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97B2B14-B7A4-4798-AE0F-2D11EA35BDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97B2B14-B7A4-4798-AE0F-2D11EA35BDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97B2B14-B7A4-4798-AE0F-2D11EA35BDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97B2B14-B7A4-4798-AE0F-2D11EA35BDC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A96FBC0-FB4A-49F7-A4ED-EFA6D4E56AC6} = {F1C9E1E9-8194-49D0-8A14-F812B14B855A}
+		{C97B2B14-B7A4-4798-AE0F-2D11EA35BDC4} = {EA9029B0-EA25-4081-8DD6-2FF38C70DB06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17735F6D-1FC0-440D-B794-C41FF1DD95B9}

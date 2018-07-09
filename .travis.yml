@@ -6,4 +6,5 @@ os:
 dotnet: 2.1.301
 script:
   - dotnet restore
-  - dotnet build
+  - dotnet build -c Release
+  - dotnet test test/Softlr.Suppress.Tests -c Release --no-build
