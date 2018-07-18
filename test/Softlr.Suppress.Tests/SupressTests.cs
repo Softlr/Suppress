@@ -8,10 +8,10 @@ namespace Softlr.Tests
     using Xunit;
     using static System.Reflection.BindingFlags;
 
+    [ExcludeFromCodeCoverage]
     public class SupressTests
     {
         [PublicAPI]
-        [ExcludeFromCodeCoverage]
         public static IEnumerable<object[]> Constants
         {
             get
