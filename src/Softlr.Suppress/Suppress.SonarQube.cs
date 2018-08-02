@@ -160,6 +160,7 @@ namespace Softlr
         public const string S2306 = "S2306:async and await should not be used as identifiers";
         public const string S2325 = "S2325:Methods and properties that don't access instance data should be static";
         public const string S2326 = "S2326:Unused type parameters should be removed";
+        public const string S2327 = "S2327:try statements with identical catch and/or finally blocks should be merged";
         public const string S2328 = "S2328:GetHashCode should not reference mutable fields";
         public const string S2330 = "S2330:Array covariance should not be used";
         public const string S2333 = "S2333:Redundant modifiers should not be used";
@@ -352,6 +353,7 @@ namespace Softlr
         public const string S3967 = "S3967:Multidimensional arrays should not be used";
         public const string S3971 = "S3971:GC.SuppressFinalize should not be called";
         public const string S3972 = "S3972:Conditionals should start on new lines";
+        public const string S3973 = "S3973:Conditionally executed single line should be denoted by indentation";
         public const string S3981 = "S3981:Collection sizes and array length comparisons should make sense";
         public const string S3984 = "S3984:Exception should not be created without being thrown";
         public const string S3990 = "S3990:Assemblies should be marked as CLS compliant";
@@ -400,6 +402,7 @@ namespace Softlr
         public const string S4069 = "S4069:Operator overloads should have named alternatives";
         public const string S4070 = "S4070:Non-flags enums should not be marked with FlagsAttribute";
         public const string S4142 = "S4142:Duplicate values should not be passed as arguments";
+        public const string S4143 = "S4143:Collection elements should not be replaced unconditionally";
         public const string S4144 = "S4144:Methods should not have identical implementations";
         public const string S4158 = "S4158:Empty collections should not be accessed or iterated";
         public const string S4159 = "S4159:Classes should implement their ExportAttribute interfaces";
@@ -413,6 +416,7 @@ namespace Softlr
         public const string S4226 = "S4226:Extensions should be in separate namespaces";
         public const string S4260 = "S4260:ConstructorArgument parameters should exist in constructors";
         public const string S4261 = "S4261:Methods should be named according to their synchronicities";
+        public const string S4275 = "S4275:Getters and setters should access the expected fields";
         public const string S4277 = "S4277:Shared parts should not be created with new";
         public const string S4426 = "S4426:Cryptographic keys should not be too short";
         public const string S4428 = "S4428:PartCreationPolicyAttribute should be used with ExportAttribute";
