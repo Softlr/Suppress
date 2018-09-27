@@ -12,6 +12,7 @@ namespace Softlr
         public const string S104 = "S104:Files should not have too many lines of code";
         public const string S1048 = "S1048:Destructors should not throw exceptions";
         public const string S105 = "S105:Tabulation characters should not be used";
+        public const string S106 = "S106:Standard outputs should not be used directly to log anything";
         public const string S1066 = "S1066:Collapsible if statements should be merged";
         public const string S1067 = "S1067:Expressions should not be too complex";
         public const string S107 = "S107:Methods should not have too many parameters";
@@ -71,7 +72,7 @@ namespace Softlr
         public const string S1301 = "S1301:switch statements should have at least 3 case clauses";
         public const string S1309 = "S1309:Track uses of in-source issue suppressions";
         public const string S131 = "S131:switch/Select statements should contain a default/Case Else clauses";
-        public const string S1313 = "S1313:IP addresses should not be hardcoded";
+        public const string S1313 = "S1313:Using hardcoded IP addresses is security-sensitive";
 
         public const string S134 =
             "S134:Control flow statements if, switch, for, foreach, while, do and try should not be nested too deeply";
@@ -118,14 +119,18 @@ namespace Softlr
         public const string S1944 = "S1944:Inappropriate casts should not be made";
         public const string S1994 = "S1994:for loop increment clauses should modify the loops' counters";
         public const string S2068 = "S2068:Credentials should not be hard-coded";
-        public const string S2070 = "S2070:SHA-1 and Message-Digest hash algorithms should not be used";
+
+        public const string S2070 =
+            "S2070:SHA-1 and Message-Digest hash algorithms should not be used in secure contexts";
+
         public const string S2076 = "S2076:OS commands should not be vulnerable to injection attacks";
         public const string S2078 = "S2078:LDAP queries should not be vulnerable to injection attacks";
         public const string S2083 = "S2083:I/O function calls should not be vulnerable to path injection attacks";
         public const string S2091 = "S2091:XPath expressions should not be vulnerable to injection attacks";
-        public const string S2092 = "S2092:Cookies should be secure";
+        public const string S2092 = "S2092:Creating cookies without the secure flag is security-sensitive";
         public const string S2114 = "S2114:Collections should not be passed as arguments to their own methods";
         public const string S2123 = "S2123:Values should not be uselessly incremented";
+        public const string S2148 = "S2148:Underscores should be used to make large numbers readable";
         public const string S2156 = "S2156:sealed classes should not have protected members";
         public const string S2178 = "S2178:Short-circuit logic should be used in boolean contexts";
 
@@ -145,11 +150,8 @@ namespace Softlr
         public const string S2225 = "S2225:ToString() method should not return null";
         public const string S2228 = "S2228:Console logging should not be used";
         public const string S2234 = "S2234:Parameters should be passed in the correct order";
-
-        public const string S2245 =
-            "S2245:Pseudorandom number generators (PRNGs) should not be used in secure contexts";
-
-        public const string S2255 = "S2255:Cookies should not be used to store sensitive information";
+        public const string S2245 = "S2245:Using pseudorandom number generators (PRNGs) is security-sensitive";
+        public const string S2255 = "S2255:Storing personal data in cookies is security-sensitive";
         public const string S2259 = "S2259:Null pointers should not be dereferenced";
         public const string S2275 = "S2275:Composite format strings should not lead to unexpected behavior at runtime";
         public const string S2278 = "S2278:Neither DES (Data Encryption Standard) nor DESede (3DES) should be used";
@@ -346,6 +348,7 @@ namespace Softlr
         public const string S3928 =
             "S3928:Parameter names used into ArgumentException constructors should match an existing one";
 
+        public const string S3937 = "S3937:Number patterns should be regular";
         public const string S3956 = "S3956:Generic.List instances should not be part of public APIs";
         public const string S3962 = "S3962:static readonly constants should be const instead";
         public const string S3963 = "S3963:static fields should be initialized inline";
@@ -353,7 +356,7 @@ namespace Softlr
         public const string S3967 = "S3967:Multidimensional arrays should not be used";
         public const string S3971 = "S3971:GC.SuppressFinalize should not be called";
         public const string S3972 = "S3972:Conditionals should start on new lines";
-        public const string S3973 = "S3973:Conditionally executed single line should be denoted by indentation";
+        public const string S3973 = "S3973:A conditionally executed single line should be denoted by indentation";
         public const string S3981 = "S3981:Collection sizes and array length comparisons should make sense";
         public const string S3984 = "S3984:Exception should not be created without being thrown";
         public const string S3990 = "S3990:Assemblies should be marked as CLS compliant";
