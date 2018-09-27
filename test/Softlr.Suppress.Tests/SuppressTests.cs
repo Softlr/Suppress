@@ -9,7 +9,7 @@ namespace Softlr.Tests
     using static System.Reflection.BindingFlags;
 
     [ExcludeFromCodeCoverage]
-    public class SupressTests
+    public class SuppressTests
     {
         [PublicAPI]
         public static IEnumerable<object[]> Constants
