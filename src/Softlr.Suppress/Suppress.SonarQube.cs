@@ -5,9 +5,9 @@ namespace Softlr
     [SuppressMessage(SONARQUBE, S2339)]
     public static partial class Suppress
     {
-        public const string S100 = "S100:Methods and properties should be named in camel case";
+        public const string S100 = "S100:Methods and properties should be named in PascalCase";
         public const string S1006 = "S1006:Method overrides should not change parameter defaults";
-        public const string S101 = "S101:Types should be named in camel case";
+        public const string S101 = "S101:Types should be named in PascalCase";
         public const string S103 = "S103:Lines should not be too long";
         public const string S104 = "S104:Files should not have too many lines of code";
         public const string S1048 = "S1048:Destructors should not throw exceptions";
@@ -203,10 +203,7 @@ namespace Softlr
         public const string S2760 = "S2760:Sequential tests should not check the same condition";
         public const string S2761 = "S2761:Doubled prefix operators !! and ~~ should not be used";
         public const string S2930 = "S2930:IDisposables should be disposed";
-
-        public const string S2931 =
-            "S2931:Classes with IDisposable members or native resources should implement IDisposable";
-
+        public const string S2931 = "S2931:Classes with IDisposable members should implement IDisposable";
         public const string S2933 = "S2933:Fields that are only assigned in the constructor should be readonly";
 
         public const string S2934 =
