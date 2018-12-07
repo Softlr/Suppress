@@ -86,6 +86,7 @@ namespace Softlr
         public const string S1451 = "S1451:Track lack of copyright and license headers";
         public const string S1479 = "S1479:switch statements should not have too many case clauses";
         public const string S1481 = "S1481:Unused local variables should be removed";
+        public const string S1523 = "S1523:Dynamically executing code is security-sensitive";
         public const string S1541 = "S1541:Methods and properties should not be too complex";
         public const string S1607 = "S1607:Tests should not be ignored";
         public const string S1643 = "S1643:Strings should not be concatenated using '+' in a loop";
@@ -124,6 +125,7 @@ namespace Softlr
             "S2070:SHA-1 and Message-Digest hash algorithms should not be used in secure contexts";
 
         public const string S2076 = "S2076:OS commands should not be vulnerable to injection attacks";
+        public const string S2077 = "S2077:Executing SQL queries is security-sensitive";
         public const string S2078 = "S2078:LDAP queries should not be vulnerable to injection attacks";
         public const string S2083 = "S2083:I/O function calls should not be vulnerable to path injection attacks";
         public const string S2091 = "S2091:XPath expressions should not be vulnerable to injection attacks";
@@ -151,7 +153,7 @@ namespace Softlr
         public const string S2228 = "S2228:Console logging should not be used";
         public const string S2234 = "S2234:Parameters should be passed in the correct order";
         public const string S2245 = "S2245:Using pseudorandom number generators (PRNGs) is security-sensitive";
-        public const string S2255 = "S2255:Storing personal data in cookies is security-sensitive";
+        public const string S2255 = "S2255:Using cookies is security-sensitive";
         public const string S2259 = "S2259:Null pointers should not be dereferenced";
         public const string S2275 = "S2275:Composite format strings should not lead to unexpected behavior at runtime";
         public const string S2278 = "S2278:Neither DES (Data Encryption Standard) nor DESede (3DES) should be used";
@@ -221,6 +223,7 @@ namespace Softlr
         public const string S2997 = "S2997:IDisposables created in a using statement should not be returned";
         public const string S3005 = "S3005:ThreadStatic should not be used on non-static fields";
         public const string S3010 = "S3010:Static fields should not be updated in constructors";
+        public const string S3011 = "S3011:Changing or bypassing accessibility is security-sensitive";
         public const string S3052 = "S3052:Members should not be initialized to default values";
         public const string S3060 = "S3060:is should not be used with this";
         public const string S3168 = "S3168:async methods should not return void";
@@ -425,10 +428,27 @@ namespace Softlr
         public const string S4456 = "S4456:Parameter validation in yielding methods should be wrapped";
         public const string S4457 = "S4457:Parameter validation in async/await methods should be wrapped";
         public const string S4462 = "S4462:Calls to async methods should not be blocking";
+
+        public const string S4507 =
+            "S4507:Delivering code in production with debug features activated is security-sensitive";
+
         public const string S4524 = "S4524:default clauses should be first or last";
+        public const string S4529 = "S4529:Exposing HTTP endpoints is security-sensitive";
         public const string S4564 = "S4564:ASP.NET HTTP request validation feature should not be disabled";
         public const string S4581 = "S4581:new Guid() should not be used";
         public const string S4586 = "S4586:Non-async Task/Task<T> methods should not return null";
+        public const string S4721 = "S4721:Executing OS commands is security-sensitive";
+        public const string S4784 = "S4784:Using regular expressions is security-sensitive";
+        public const string S4787 = "S4787:Encrypting data is security-sensitive";
+        public const string S4790 = "S4790:Hashing data is security-sensitive";
+        public const string S4792 = "S4792:Configuring loggers is security-sensitive";
+        public const string S4797 = "S4797:Handling files is security-sensitive";
+        public const string S4817 = "S4817:Executing XPath expressions is security-sensitive";
+        public const string S4818 = "S4818:Using Sockets is security-sensitive";
+        public const string S4823 = "S4823:Using command line arguments is security-sensitive";
+        public const string S4825 = "S4825:Sending HTTP requests is security-sensitive";
+        public const string S4829 = "S4829:Reading the Standard Input is security-sensitive";
+        public const string S4834 = "S4834:Controlling permissions is security-sensitive";
         public const string S818 = "S818:Literal suffixes should be upper case";
 
         public const string S881 =
