@@ -1,5 +1,6 @@
 namespace Softlr
 {
+    using System;
     using System.Diagnostics.CodeAnalysis;
 
     [SuppressMessage(SONARQUBE, S2339)]
@@ -124,11 +125,20 @@ namespace Softlr
         public const string S2070 =
             "S2070:SHA-1 and Message-Digest hash algorithms should not be used in secure contexts";
 
+        [Obsolete(DROPPED_RULE)]
         public const string S2076 = "S2076:OS commands should not be vulnerable to injection attacks";
+
         public const string S2077 = "S2077:Executing SQL queries is security-sensitive";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S2078 = "S2078:LDAP queries should not be vulnerable to injection attacks";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S2083 = "S2083:I/O function calls should not be vulnerable to path injection attacks";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S2091 = "S2091:XPath expressions should not be vulnerable to injection attacks";
+
         public const string S2092 = "S2092:Creating cookies without the secure flag is security-sensitive";
         public const string S2114 = "S2114:Collections should not be passed as arguments to their own methods";
         public const string S2123 = "S2123:Values should not be uselessly incremented";
@@ -187,7 +197,10 @@ namespace Softlr
         public const string S2551 = "S2551:Types and this should not be used for locking";
         public const string S2583 = "S2583:Conditionally executed blocks should be reachable";
         public const string S2589 = "S2589:Boolean expressions should not be gratuitous";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S2631 = "S2631:Regular expressions should not be vulnerable to Denial of Service attacks";
+
         public const string S2674 = "S2674:The length returned from a stream read should be checked";
         public const string S2681 = "S2681:Multiline blocks should be enclosed in curly braces";
         public const string S2688 = "S2688:NaN should not be used in comparisons";
@@ -310,7 +323,10 @@ namespace Softlr
         public const string S3604 = "S3604:Member initializer values should not be redundant";
         public const string S3610 = "S3610:Nullable type comparison should not be redundant";
         public const string S3626 = "S3626:Jump statements should not be redundant";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S3649 = "S3649:SQL queries should not be vulnerable to injection attacks";
+
         public const string S3655 = "S3655:Empty nullable value should not be accessed";
         public const string S3693 = "S3693:Exception constructors should not throw exceptions";
         public const string S3717 = "S3717:Track use of NotImplementedException";
@@ -449,6 +465,7 @@ namespace Softlr
         public const string S4825 = "S4825:Sending HTTP requests is security-sensitive";
         public const string S4829 = "S4829:Reading the Standard Input is security-sensitive";
         public const string S4834 = "S4834:Controlling permissions is security-sensitive";
+        public const string S5042 = "S5042:Expanding archive files is security-sensitive";
         public const string S818 = "S818:Literal suffixes should be upper case";
 
         public const string S881 =
