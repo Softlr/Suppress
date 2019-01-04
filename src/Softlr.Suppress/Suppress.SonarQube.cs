@@ -449,6 +449,7 @@ namespace Softlr
         public const string S4825 = "S4825:Sending HTTP requests is security-sensitive";
         public const string S4829 = "S4829:Reading the Standard Input is security-sensitive";
         public const string S4834 = "S4834:Controlling permissions is security-sensitive";
+        public const string S5042 = "S5042:Expanding archive files is security-sensitive";
         public const string S818 = "S818:Literal suffixes should be upper case";
 
         public const string S881 =
