@@ -8,6 +8,9 @@
 	<LangVersion>latest</LangVersion>
 	<Authors>Softlr</Authors>
     <Description>Constants for easy suppression of C# analyzers warnings and errors.</Description>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <RootNamespace>Softlr</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
@@ -20,6 +23,10 @@
     <PackageReference Include="JetBrains.Annotations" Version="2018.3.0">
 		<PrivateAssets>all</PrivateAssets>
 	</PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp" Version="7.10.0.7896">
 		<PrivateAssets>all</PrivateAssets>
 		<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
