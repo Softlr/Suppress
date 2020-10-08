@@ -1,10 +1,10 @@
 namespace Softlr.Tests
 {
+    using FluentAssertions;
+    using JetBrains.Annotations;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Linq;
-    using FluentAssertions;
-    using JetBrains.Annotations;
     using Xunit;
     using static System.Reflection.BindingFlags;
 
