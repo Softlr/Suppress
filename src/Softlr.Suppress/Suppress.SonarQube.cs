@@ -31,6 +31,7 @@ namespace Softlr
         public const string S1121 = "S1121:Assignments should not be made from within sub-expressions";
         public const string S1123 = "S1123:Obsolete attributes should include explanations";
         public const string S1125 = "S1125:Boolean literals should not be redundant";
+        public const string S1128 = "S1128:Unused using should be removed";
         public const string S113 = "S113:Files should contain an empty newline at the end";
         public const string S1134 = "S1134:Track uses of FIXME tags";
         public const string S1135 = "S1135:Track uses of TODO tags";
@@ -48,6 +49,7 @@ namespace Softlr
 
         public const string S1186 = "S1186:Methods should not be empty";
         public const string S1192 = "S1192:String literals should not be duplicated";
+        public const string S1199 = "S1199:Nested code blocks should not be used";
 
         public const string S1200 =
             "S1200:Classes should not be coupled to too many other classes (Single Responsibility Principle)";
@@ -87,7 +89,10 @@ namespace Softlr
         public const string S1451 = "S1451:Track lack of copyright and license headers";
         public const string S1479 = "S1479:switch statements should not have too many case clauses";
         public const string S1481 = "S1481:Unused local variables should be removed";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S1523 = "S1523:Dynamically executing code is security-sensitive";
+
         public const string S1541 = "S1541:Methods and properties should not be too complex";
         public const string S1607 = "S1607:Tests should not be ignored";
         public const string S1643 = "S1643:Strings should not be concatenated using '+' in a loop";
@@ -108,7 +113,7 @@ namespace Softlr
 
         public const string S1821 = "S1821:switch statements should not be nested";
         public const string S1848 = "S1848:Objects should not be created to be dropped immediately without being used";
-        public const string S1854 = "S1854:Dead stores should be removed";
+        public const string S1854 = "S1854:Unused assignments should be removed";
         public const string S1858 = "S1858:ToString() calls should not be redundant";
         public const string S1862 = "S1862:Related if/else if statements should not have the same condition";
 
@@ -120,7 +125,7 @@ namespace Softlr
         public const string S1940 = "S1940:Boolean checks should not be inverted";
         public const string S1944 = "S1944:Inappropriate casts should not be made";
         public const string S1994 = "S1994:for loop increment clauses should modify the loops' counters";
-        public const string S2068 = "S2068:Credentials should not be hard-coded";
+        public const string S2068 = "S2068:Hard-coded credentials are security-sensitive";
 
         public const string S2070 =
             "S2070:SHA-1 and Message-Digest hash algorithms should not be used in secure contexts";
@@ -128,7 +133,7 @@ namespace Softlr
         [Obsolete(DROPPED_RULE)]
         public const string S2076 = "S2076:OS commands should not be vulnerable to injection attacks";
 
-        public const string S2077 = "S2077:Executing SQL queries is security-sensitive";
+        public const string S2077 = "S2077:Formatting SQL queries is security-sensitive";
 
         [Obsolete(DROPPED_RULE)]
         public const string S2078 = "S2078:LDAP queries should not be vulnerable to injection attacks";
@@ -147,7 +152,7 @@ namespace Softlr
         public const string S2178 = "S2178:Short-circuit logic should be used in boolean contexts";
 
         public const string S2183 =
-            "S2183:Ints and longs should not be shifted by zero or more than their number of bits-1";
+            "S2183:Integral numbers should not be shifted by zero or more than their number of bits-1";
 
         public const string S2184 =
             "S2184:Results of integer division should not be assigned to floating point variables";
@@ -163,7 +168,9 @@ namespace Softlr
         public const string S2228 = "S2228:Console logging should not be used";
         public const string S2234 = "S2234:Parameters should be passed in the correct order";
         public const string S2245 = "S2245:Using pseudorandom number generators (PRNGs) is security-sensitive";
-        public const string S2255 = "S2255:Using cookies is security-sensitive";
+        public const string S2251 = "S2251:A for loop update clause should move the counter in the right direction";
+        public const string S2252 = "S2252:For-loop conditions should be true at least once";
+        public const string S2255 = "S2255:Writing cookies is security-sensitive";
         public const string S2259 = "S2259:Null pointers should not be dereferenced";
         public const string S2275 = "S2275:Composite format strings should not lead to unexpected behavior at runtime";
         public const string S2278 = "S2278:Neither DES (Data Encryption Standard) nor DESede (3DES) should be used";
@@ -191,11 +198,12 @@ namespace Softlr
         public const string S2376 = "S2376:Write-only properties should not be used";
         public const string S2386 = "S2386:Mutable fields should not be public static";
         public const string S2387 = "S2387:Child class fields should not shadow parent class fields";
-        public const string S2436 = "S2436:Classes and methods should not have too many generic parameters";
+        public const string S2436 = "S2436:Types and methods should not have too many generic parameters";
         public const string S2437 = "S2437:Silly bit operations should not be performed";
+        public const string S2479 = "S2479:Whitespace and control characters in string literals should be explicit";
         public const string S2486 = "S2486:Generic exceptions should not be ignored";
-        public const string S2551 = "S2551:Types and this should not be used for locking";
-        public const string S2583 = "S2583:Conditionally executed blocks should be reachable";
+        public const string S2551 = "S2551:Shared resources should not be used for locking";
+        public const string S2583 = "S2583:Conditionally executed code should be reachable";
         public const string S2589 = "S2589:Boolean expressions should not be gratuitous";
 
         [Obsolete(DROPPED_RULE)]
@@ -210,6 +218,7 @@ namespace Softlr
         public const string S2701 = "S2701:Literal boolean values should not be used in assertions";
         public const string S2737 = "S2737:catch clauses should do more than rethrow";
         public const string S2743 = "S2743:Static fields should not be used in generic types";
+        public const string S2755 = "S2755:XML parsers should not be vulnerable to XXE attacks";
         public const string S2757 = "S2757:=+ should not be used instead of +=";
 
         public const string S2758 =
@@ -217,6 +226,7 @@ namespace Softlr
 
         public const string S2760 = "S2760:Sequential tests should not check the same condition";
         public const string S2761 = "S2761:Doubled prefix operators !! and ~~ should not be used";
+        public const string S2857 = "S2857:SQL keywords should be delimited by whitespace";
         public const string S2930 = "S2930:IDisposables should be disposed";
         public const string S2931 = "S2931:Classes with IDisposable members should implement IDisposable";
         public const string S2933 = "S2933:Fields that are only assigned in the constructor should be readonly";
@@ -236,7 +246,10 @@ namespace Softlr
         public const string S2997 = "S2997:IDisposables created in a using statement should not be returned";
         public const string S3005 = "S3005:ThreadStatic should not be used on non-static fields";
         public const string S3010 = "S3010:Static fields should not be updated in constructors";
-        public const string S3011 = "S3011:Changing or bypassing accessibility is security-sensitive";
+
+        public const string S3011 =
+            "S3011:Reflection should not be used to increase accessibility of classes, methods, or fields";
+
         public const string S3052 = "S3052:Members should not be initialized to default values";
         public const string S3060 = "S3060:is should not be used with this";
         public const string S3168 = "S3168:async methods should not return void";
@@ -271,7 +284,7 @@ namespace Softlr
         public const string S3263 = "S3263:Static fields should appear in the order they must be initialized";
         public const string S3264 = "S3264:Events should be invoked";
         public const string S3265 = "S3265:Non-flags enums should not be used in bitwise operations";
-        public const string S3330 = "S3330:HttpOnly should be set on cookies";
+        public const string S3330 = "S3330:Creating cookies without the HttpOnly flag is security-sensitive";
         public const string S3343 = "S3343:Caller information parameters should come at the end of the parameter list";
         public const string S3346 = "S3346:Expressions used in Debug.Assert should not produce side effects";
         public const string S3353 = "S3353:Unchanged local variables should be const";
@@ -365,6 +378,7 @@ namespace Softlr
             "S3928:Parameter names used into ArgumentException constructors should match an existing one";
 
         public const string S3937 = "S3937:Number patterns should be regular";
+        public const string S3949 = "S3949:Calculations should not overflow";
         public const string S3956 = "S3956:Generic.List instances should not be part of public APIs";
         public const string S3962 = "S3962:static readonly constants should be const instead";
         public const string S3963 = "S3963:static fields should be initialized inline";
@@ -374,7 +388,7 @@ namespace Softlr
         public const string S3972 = "S3972:Conditionals should start on new lines";
         public const string S3973 = "S3973:A conditionally executed single line should be denoted by indentation";
         public const string S3981 = "S3981:Collection sizes and array length comparisons should make sense";
-        public const string S3984 = "S3984:Exception should not be created without being thrown";
+        public const string S3984 = "S3984:Exceptions should not be created without being thrown";
         public const string S3990 = "S3990:Assemblies should be marked as CLS compliant";
         public const string S3992 = "S3992:Assemblies should explicitly specify COM visibility";
         public const string S3993 = "S3993:Custom attributes should be marked with System.AttributeUsageAttribute";
@@ -420,12 +434,14 @@ namespace Softlr
         public const string S4061 = "S4061:params should be used instead of varargs";
         public const string S4069 = "S4069:Operator overloads should have named alternatives";
         public const string S4070 = "S4070:Non-flags enums should not be marked with FlagsAttribute";
+        public const string S4136 = "S4136:Method overloads should be grouped together";
         public const string S4142 = "S4142:Duplicate values should not be passed as arguments";
         public const string S4143 = "S4143:Collection elements should not be replaced unconditionally";
         public const string S4144 = "S4144:Methods should not have identical implementations";
         public const string S4158 = "S4158:Empty collections should not be accessed or iterated";
         public const string S4159 = "S4159:Classes should implement their ExportAttribute interfaces";
         public const string S4200 = "S4200:Native methods should be wrapped";
+        public const string S4201 = "S4201:Null checks should not be used with is";
         public const string S4210 = "S4210:Windows Forms entry points should be marked with STAThread";
         public const string S4211 = "S4211:Members should not have conflicting transparency annotations";
         public const string S4212 = "S4212:Serialization constructors should be secured";
@@ -437,40 +453,72 @@ namespace Softlr
         public const string S4261 = "S4261:Methods should be named according to their synchronicities";
         public const string S4275 = "S4275:Getters and setters should access the expected fields";
         public const string S4277 = "S4277:Shared parts should not be created with new";
-        public const string S4426 = "S4426:Cryptographic keys should not be too short";
+        public const string S4426 = "S4426:Cryptographic keys should be robust";
         public const string S4428 = "S4428:PartCreationPolicyAttribute should be used with ExportAttribute";
         public const string S4432 = "S4432:AES encryption algorithm should be used with secured mode";
         public const string S4433 = "S4433:LDAP connections should be authenticated";
         public const string S4456 = "S4456:Parameter validation in yielding methods should be wrapped";
         public const string S4457 = "S4457:Parameter validation in async/await methods should be wrapped";
         public const string S4462 = "S4462:Calls to async methods should not be blocking";
+        public const string S4487 = "S4487:Unread private fields should be removed";
 
         public const string S4507 =
             "S4507:Delivering code in production with debug features activated is security-sensitive";
 
         public const string S4524 = "S4524:default clauses should be first or last";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S4529 = "S4529:Exposing HTTP endpoints is security-sensitive";
+
         public const string S4564 = "S4564:ASP.NET HTTP request validation feature should not be disabled";
         public const string S4581 = "S4581:new Guid() should not be used";
+
+        public const string S4583 =
+            "S4583:Calls to delegate's method BeginInvoke should be paired with calls to EndInvoke";
+
         public const string S4586 = "S4586:Non-async Task/Task<T> methods should not return null";
+
+        public const string S4635 =
+            "S4635:String offset-based methods should be preferred for finding substrings from offsets";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S4721 = "S4721:Executing OS commands is security-sensitive";
+
         public const string S4784 = "S4784:Using regular expressions is security-sensitive";
         public const string S4787 = "S4787:Encrypting data is security-sensitive";
-        public const string S4790 = "S4790:Hashing data is security-sensitive";
+        public const string S4790 = "S4790:Using weak hashing algorithms is security-sensitive";
         public const string S4792 = "S4792:Configuring loggers is security-sensitive";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S4797 = "S4797:Handling files is security-sensitive";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S4817 = "S4817:Executing XPath expressions is security-sensitive";
+
         public const string S4818 = "S4818:Using Sockets is security-sensitive";
         public const string S4823 = "S4823:Using command line arguments is security-sensitive";
+
+        [Obsolete(DROPPED_RULE)]
         public const string S4825 = "S4825:Sending HTTP requests is security-sensitive";
+
         public const string S4829 = "S4829:Reading the Standard Input is security-sensitive";
+        public const string S4830 = "S4830:Server certificates should be verified during SSL/TLS connections";
         public const string S4834 = "S4834:Controlling permissions is security-sensitive";
+        public const string S5034 = "S5034:ValueTask should be consumed correctly";
         public const string S5042 = "S5042:Expanding archive files is security-sensitive";
+        public const string S5542 = "S5542:Encryption algorithms should be used with secure mode and padding scheme";
+        public const string S5547 = "S5547:Cipher algorithms should be robust";
+        public const string S5659 = "S5659:JWT should be signed and verified with strong cipher algorithms";
+
+        public const string S5766 =
+            "S5766:Deserializing objects without performing data validation is security-sensitive";
+
+        public const string S5773 = "S5773:Types allowed to be deserialized should be restricted";
         public const string S818 = "S818:Literal suffixes should be upper case";
 
         public const string S881 =
-            "S881:Increment (++) and decrement (--) operators should not be used in a method call or mixed with other "
-            + "operators in an expression";
+            "S881:Increment (++) and decrement (--) operators should not be used in a method call or mixed with " +
+            "other operators in an expression";
 
         public const string S907 = "S907:goto statement should not be used";
         public const string S927 = "S927:parameter names should match base declaration and other partial definitions";
