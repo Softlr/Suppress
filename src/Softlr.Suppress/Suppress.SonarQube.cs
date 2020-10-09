@@ -336,10 +336,7 @@ namespace Softlr
         public const string S3604 = "S3604:Member initializer values should not be redundant";
         public const string S3610 = "S3610:Nullable type comparison should not be redundant";
         public const string S3626 = "S3626:Jump statements should not be redundant";
-
-        [Obsolete(DROPPED_RULE)]
-        public const string S3649 = "S3649:SQL queries should not be vulnerable to injection attacks";
-
+        public const string S3649 = "S3649:Database queries should not be vulnerable to injection attacks";
         public const string S3655 = "S3655:Empty nullable value should not be accessed";
         public const string S3693 = "S3693:Exception constructors should not throw exceptions";
         public const string S3717 = "S3717:Track use of NotImplementedException";
@@ -506,6 +503,15 @@ namespace Softlr
         public const string S4834 = "S4834:Controlling permissions is security-sensitive";
         public const string S5034 = "S5034:ValueTask should be consumed correctly";
         public const string S5042 = "S5042:Expanding archive files is security-sensitive";
+
+        public const string S5131 =
+            "S5131:Endpoints should not be vulnerable to reflected cross-site scripting (XSS) attacks";
+
+        public const string S5135 = "S5135:Deserialization should not be vulnerable to injection attacks";
+        public const string S5144 = "S5144:Server-side requests should not be vulnerable to forging attacks";
+        public const string S5145 = "S5145:Logging should not be vulnerable to injection attacks";
+        public const string S5146 = "S5146:HTTP request redirections should not be open to forging attacks";
+        public const string S5167 = "S5167:HTTP response headers should not be vulnerable to injection attacks";
         public const string S5542 = "S5542:Encryption algorithms should be used with secure mode and padding scheme";
         public const string S5547 = "S5547:Cipher algorithms should be robust";
         public const string S5659 = "S5659:JWT should be signed and verified with strong cipher algorithms";
