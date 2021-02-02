@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
-	<TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.0</TargetFrameworks>
-	<DebugType>full</DebugType>
+    <TargetFrameworks>net40;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.1</TargetFrameworks>
+	  <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-	<CodeAnalysisRuleSet>Softlr.Suppress.ruleset</CodeAnalysisRuleSet>
-	<LangVersion>latest</LangVersion>
-	<Authors>Softlr</Authors>
+	  <CodeAnalysisRuleSet>Softlr.Suppress.ruleset</CodeAnalysisRuleSet>
+	  <LangVersion>latest</LangVersion>
+	  <Authors>Softlr</Authors>
     <Description>Constants for easy suppression of C# analyzers warnings and errors.</Description>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -20,14 +20,14 @@
     <PackageReference Include="codecracker.CSharp" Version="1.1.0">
 		<PrivateAssets>all</PrivateAssets>
 	</PackageReference>
-    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0">
+    <PackageReference Include="JetBrains.Annotations" Version="2020.3.0">
 		<PrivateAssets>all</PrivateAssets>
 	</PackageReference>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.1.21947">
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.17.0.26580">
 		<PrivateAssets>all</PrivateAssets>
 		<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 	</PackageReference>

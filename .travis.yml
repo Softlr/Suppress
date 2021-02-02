@@ -3,8 +3,8 @@ mono: none
 os:  
   - linux
   - osx
-dotnet: 2.1.301
+dotnet: 5.0.102
 script:
   - dotnet restore
-  - dotnet build -c Release
+  - dotnet build -c Release --no-restore
   - dotnet test test/Softlr.Suppress.Tests -c Release --no-build
