@@ -14,7 +14,6 @@
     <AdditionalFiles Include="..\..\.sonarlint\softlr.suppress\CSharp\SonarLint.xml" Link="SonarLint.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="codecracker.CSharp" Version="1.1.0" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="JetBrains.Annotations" Version="2020.3.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
