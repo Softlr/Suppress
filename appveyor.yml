@@ -9,7 +9,7 @@ skip_commits:
   message: /\[(skip ci|ci skip)\]/
 
 version: 1.7.0.{build}
-image: Visual Studio 2017
+image: Visual Studio 2019
 
 install:
   - choco install sonarscanner-msbuild-net46 -y
