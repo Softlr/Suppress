@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="SonarQube - Softlr.Suppress Softlr" ToolsVersion="15.0">
   <Include Path="..\..\.sonarlint\softlr.suppresscsharp.ruleset" Action="Default" />
   <Include Path="..\..\_analysis\suppress.ruleset" Action="Default" />
