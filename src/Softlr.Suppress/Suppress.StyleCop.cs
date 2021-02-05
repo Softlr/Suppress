@@ -196,8 +196,6 @@ namespace Softlr
         public const string SA1651 = "SA1651:Do not use placeholder elements";
         public const string SX1101 = "SX1101:Do not prefix local calls with 'this.'";
         public const string SX1309 = "SX1309:Field names should begin with underscore";
-
-        [SuppressMessage("ReSharper", "InconsistentNaming")]
         public const string SX1309S = "SX1309S:Static field names should begin with underscore";
     }
 }
