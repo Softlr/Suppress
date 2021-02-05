@@ -36,6 +36,7 @@ after_build:
 
 test_script:
   - dotnet test test\Softlr.Suppress.Tests -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./coverage.xml
+  - ps: mv .\coverage.net5.0.xml .\coverage.xml
   - ps: SonarScanner.MSBuild end /d:sonar.login=$env:SonarCloudAccessToken
 
 after_test:
