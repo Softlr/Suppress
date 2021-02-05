@@ -35,7 +35,7 @@ after_build:
   - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.7.0
 
 test_script:
-  - dotnet test test\Softlr.Suppress.Tests -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+  - dotnet test test\Softlr.Suppress.Tests -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=coverage.xml
   - ps: SonarScanner.MSBuild end /d:sonar.login=$env:SonarCloudAccessToken
 
 after_test:
