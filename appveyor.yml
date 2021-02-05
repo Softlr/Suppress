@@ -13,7 +13,6 @@ image: Visual Studio 2019
 
 install:
   - choco install sonarscanner-msbuild-net46 -y
-  - choco install opencover.portable -y
   - choco install codecov -y
 
 nuget:
@@ -36,8 +35,7 @@ after_build:
   - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.7.0
 
 test_script:
-  - dotnet test test\Softlr.Suppress.Tests -c Release --no-build
-  - OpenCover.Console -register:user -target:dotnet.exe -targetargs:"test test\Softlr.Suppress.Tests -c Release --no-build" -output:coverage.xml -filter:"+[Softlr*]* -[*]*Exception* -[*Tests]* -[xunit*]*" -oldStyle
+  - dotnet test test\Softlr.Suppress.Tests -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
   - ps: SonarScanner.MSBuild end /d:sonar.login=$env:SonarCloudAccessToken
 
 after_test:
