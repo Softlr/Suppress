@@ -4,7 +4,6 @@ namespace Softlr.Tests
     using System.Diagnostics.CodeAnalysis;
     using System.Linq;
     using FluentAssertions;
-    using JetBrains.Annotations;
     using Xunit;
     using static System.Reflection.BindingFlags;
     using static Softlr.Suppress;
@@ -12,7 +11,6 @@ namespace Softlr.Tests
     [ExcludeFromCodeCoverage]
     public class SuppressTests
     {
-        [PublicAPI]
         public static TheoryData<string, string> Constants
         {
             get
