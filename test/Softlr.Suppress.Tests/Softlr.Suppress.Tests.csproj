@@ -2,14 +2,11 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0</TargetFrameworks>
     <DebugType>full</DebugType>
-    <CodeAnalysisRuleSet>Softlr.Suppress.Tests.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\.sonarlint\softlr.suppresscsharp.ruleset</CodeAnalysisRuleSet>
     <LangVersion>latest</LangVersion>
     <SonarQubeTestProject>false</SonarQubeTestProject>
     <RootNamespace>Softlr.Tests</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <AdditionalFiles Include="..\..\_analysis\stylecop.json" />
-  </ItemGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\..\.sonarlint\softlr.suppress\CSharp\SonarLint.xml" Link="SonarLint.xml" />
   </ItemGroup>
@@ -24,13 +21,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.18.0.27296">
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.20.0.28934">
       <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <PrivateAssets>all</PrivateAssets>
