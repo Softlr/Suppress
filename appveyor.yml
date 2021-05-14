@@ -35,8 +35,8 @@ after_build:
   - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.7.0
 
 test_script:
-  - dotnet test test\Softlr.Suppress.Tests -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../../coverage.xml
-  - ps: mv .\coverage.net5.0.xml .\coverage.xml
+  - dotnet test -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../../coverage.xml
+  - ps: mv ./coverage.net5.0.xml ./coverage.xml
   - ps: dotnet sonarscanner end /d:sonar.login=$env:SonarCloudAccessToken
 
 after_test:
@@ -44,7 +44,7 @@ after_test:
 
 artifacts:
   - path: coverage.xml
-  - path: .\*.nupkg
+  - path: ./*.nupkg
 
 deploy:
   - provider: NuGet
