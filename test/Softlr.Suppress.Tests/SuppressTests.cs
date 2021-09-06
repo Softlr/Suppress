@@ -36,18 +36,18 @@ namespace Softlr.Tests
 
         [Theory]
         [MemberData(nameof(Constants))]
-        public void ShouldHaveTrimmedConstantValues(string name, string value) =>
-            value.Should().NotStartWith(" ", $"{name} value starts with a space")
-                .And.NotEndWith(" ", $"{name} value ends with a space");
+        public void Value_containing_multiple_spaces_in_a_row_is_invalid(string name, string value) =>
+            value.Should().NotContain("  ", $"{name} contains multiple spaces in a row");
 
         [Theory]
         [MemberData(nameof(Constants))]
-        public void ShouldHaveValueStartingWithConstName(string name, string value) =>
+        public void Value_not_starting_with_const_name_and_colon_is_invalid(string name, string value) =>
             value.Should().StartWith($"{name}:", $"{name} dot not start with the proper text");
 
         [Theory]
         [MemberData(nameof(Constants))]
-        public void ShouldNotContainMultipleSpacesInARowInConstantValues(string name, string value) =>
-            value.Should().NotContain("  ", $"{name} contains multiple spaces in a row");
+        public void Value_starting_with_a_space_is_invalid(string name, string value) =>
+            value.Should().NotStartWith(" ", $"{name} value starts with a space")
+                .And.NotEndWith(" ", $"{name} value ends with a space");
     }
 }
