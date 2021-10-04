@@ -1,9 +1,7 @@
 namespace Softlr
 {
-    using JetBrains.Annotations;
     using System.Diagnostics.CodeAnalysis;
 
-    [PublicAPI]
     [ExcludeFromCodeCoverage]
     [SuppressMessage(SONARQUBE, S2339)]
     public static partial class Suppress

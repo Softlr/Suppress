@@ -125,13 +125,14 @@ namespace Softlr
         public const string S1940 = "S1940:Boolean checks should not be inverted";
         public const string S1944 = "S1944:Inappropriate casts should not be made";
         public const string S1994 = "S1994:for loop increment clauses should modify the loops' counters";
+        public const string S2053 = "S2053:Hashes should include an unpredictable salt";
         public const string S2068 = "S2068:Hard-coded credentials are security-sensitive";
 
         public const string S2070 =
             "S2070:SHA-1 and Message-Digest hash algorithms should not be used in secure contexts";
 
         [Obsolete(DROPPED_RULE)]
-        public const string S2076 = "S2076:OS commands should not be vulnerable to injection attacks";
+        public const string S2076 = "S2076:OS commands should not be vulnerable to command injection attacks";
 
         public const string S2077 = "S2077:Formatting SQL queries is security-sensitive";
 
@@ -171,6 +172,7 @@ namespace Softlr
         public const string S2251 = "S2251:A for loop update clause should move the counter in the right direction";
         public const string S2252 = "S2252:For-loop conditions should be true at least once";
         public const string S2255 = "S2255:Writing cookies is security-sensitive";
+        public const string S2257 = "S2257:Using non-standard cryptographic algorithms is security-sensitive";
         public const string S2259 = "S2259:Null pointers should not be dereferenced";
         public const string S2275 = "S2275:Composite format strings should not lead to unexpected behavior at runtime";
         public const string S2278 = "S2278:Neither DES (Data Encryption Standard) nor DESede (3DES) should be used";
@@ -284,6 +286,7 @@ namespace Softlr
         public const string S3263 = "S3263:Static fields should appear in the order they must be initialized";
         public const string S3264 = "S3264:Events should be invoked";
         public const string S3265 = "S3265:Non-flags enums should not be used in bitwise operations";
+        public const string S3329 = "S3329:Cipher Block Chaining IV's should be random and unique";
         public const string S3330 = "S3330:Creating cookies without the HttpOnly flag is security-sensitive";
         public const string S3343 = "S3343:Caller information parameters should come at the end of the parameter list";
         public const string S3346 = "S3346:Expressions used in Debug.Assert should not produce side effects";
@@ -412,6 +415,7 @@ namespace Softlr
         public const string S4026 = "S4026:Assemblies should be marked with NeutralResourcesLanguageAttribute";
         public const string S4027 = "S4027:Exceptions should provide standard constructors";
         public const string S4035 = "S4035:Classes implementing IEquatable<T> should be sealed";
+        public const string S4036 = "S4036:Searching OS commands in PATH is security-sensitive";
         public const string S4039 = "S4039:Interface methods should be callable by derived types";
         public const string S4040 = "S4040:Strings should be normalized to uppercase";
         public const string S4041 = "S4041:Type names should not match namespaces";
@@ -450,6 +454,7 @@ namespace Softlr
         public const string S4261 = "S4261:Methods should be named according to their synchronicities";
         public const string S4275 = "S4275:Getters and setters should access the expected fields";
         public const string S4277 = "S4277:Shared parts should not be created with new";
+        public const string S4423 = "S4423:Weak SSL/TLS protocols should not be used";
         public const string S4426 = "S4426:Cryptographic keys should be robust";
         public const string S4428 = "S4428:PartCreationPolicyAttribute should be used with ExportAttribute";
         public const string S4432 = "S4432:AES encryption algorithm should be used with secured mode";
@@ -502,7 +507,9 @@ namespace Softlr
         public const string S4830 = "S4830:Server certificates should be verified during SSL/TLS connections";
         public const string S4834 = "S4834:Controlling permissions is security-sensitive";
         public const string S5034 = "S5034:ValueTask should be consumed correctly";
-        public const string S5042 = "S5042:Expanding archive files is security-sensitive";
+
+        public const string S5042 =
+            "S5042:Expanding archive files without controlling resource consumption is security sensitive";
 
         public const string S5131 =
             "S5131:Endpoints should not be vulnerable to reflected cross-site scripting (XSS) attacks";
@@ -512,9 +519,11 @@ namespace Softlr
         public const string S5145 = "S5145:Logging should not be vulnerable to injection attacks";
         public const string S5146 = "S5146:HTTP request redirections should not be open to forging attacks";
         public const string S5167 = "S5167:HTTP response headers should not be vulnerable to injection attacks";
+        public const string S5332 = "S5332:Using clear-text protocols is security-sensitive";
         public const string S5542 = "S5542:Encryption algorithms should be used with secure mode and padding scheme";
         public const string S5547 = "S5547:Cipher algorithms should be robust";
         public const string S5659 = "S5659:JWT should be signed and verified with strong cipher algorithms";
+        public const string S5753 = "S5753:Disabling ASP.NET Request Validation feature is security-sensitive";
 
         public const string S5766 =
             "S5766:Deserializing objects without performing data validation is security-sensitive";
@@ -527,6 +536,6 @@ namespace Softlr
             "other operators in an expression";
 
         public const string S907 = "S907:goto statement should not be used";
-        public const string S927 = "S927:parameter names should match base declaration and other partial definitions";
+        public const string S927 = "S927:Parameter names should match base declaration and other partial definitions";
     }
 }

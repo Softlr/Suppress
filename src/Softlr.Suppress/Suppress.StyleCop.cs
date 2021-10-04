@@ -35,7 +35,8 @@ namespace Softlr
         public const string SA1025 = "SA1025:Code should not contain multiple whitespace in a row";
 
         public const string SA1026 =
-            "SA1026:Code should not contain space after new keyword in implicitly typed array allocation";
+            "SA1026:Code should not contain space after new or stackalloc keyword in implicitly typed array " +
+            "allocation";
 
         public const string SA1027 = "SA1027:Use tabs correctly";
         public const string SA1028 = "SA1028:Code should not contain trailing whitespace";
@@ -79,6 +80,8 @@ namespace Softlr
         public const string SA1136 = "SA1136:Enum values should be on separate lines";
         public const string SA1137 = "SA1137:Elements should have the same indentation";
         public const string SA1139 = "SA1139:Use literal suffix notation instead of casting";
+        public const string SA1141 = "SA1141:Use tuple syntax";
+        public const string SA1142 = "SA1142:Refer to tuple fields by name";
         public const string SA1200 = "SA1200:Using directives should be placed correctly";
         public const string SA1201 = "SA1201:Elements should appear in the correct order";
         public const string SA1202 = "SA1202:Elements should be ordered by access";
@@ -94,7 +97,7 @@ namespace Softlr
         public const string SA1212 = "SA1212:Property accessors should follow order";
         public const string SA1213 = "SA1213:Event accessors should follow order";
         public const string SA1214 = "SA1214:Readonly fields should appear before non-readonly fields";
-        public const string SA1216 = "SA1216:Using static directives should be placed at the correct location.";
+        public const string SA1216 = "SA1216:Using static directives should be placed at the correct location";
         public const string SA1217 = "SA1217:Using static directives should be ordered alphabetically";
         public const string SA1300 = "SA1300:Element should begin with upper-case letter";
         public const string SA1302 = "SA1302:Interface names should begin with I";
@@ -110,6 +113,7 @@ namespace Softlr
         public const string SA1312 = "SA1312:Variable names should begin with lower-case letter";
         public const string SA1313 = "SA1313:Parameter names should begin with lower-case letter";
         public const string SA1314 = "SA1314:Type parameter names should begin with T";
+        public const string SA1316 = "SA1316:Tuple element names should use correct casing";
         public const string SA1400 = "SA1400:Access modifier should be declared";
         public const string SA1401 = "SA1401:Fields should be private";
         public const string SA1402 = "SA1402:File may only contain a single type";
@@ -123,6 +127,7 @@ namespace Softlr
         public const string SA1411 = "SA1411:Attribute constructor should not use unnecessary parenthesis";
         public const string SA1412 = "SA1412:Store files as UTF-8 with byte order mark";
         public const string SA1413 = "SA1413:Use trailing comma in multi-line initializers";
+        public const string SA1414 = "SA1414:Tuple types in signatures should have element names";
         public const string SA1500 = "SA1500:Braces for multi-line statements should not share line";
         public const string SA1501 = "SA1501:Statement should not be on a single line";
         public const string SA1502 = "SA1502:Element should not be on a single line";
@@ -191,8 +196,6 @@ namespace Softlr
         public const string SA1651 = "SA1651:Do not use placeholder elements";
         public const string SX1101 = "SX1101:Do not prefix local calls with 'this.'";
         public const string SX1309 = "SX1309:Field names should begin with underscore";
-
-        [SuppressMessage("ReSharper", "InconsistentNaming")]
         public const string SX1309S = "SX1309S:Static field names should begin with underscore";
     }
 }
