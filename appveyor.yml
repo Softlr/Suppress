@@ -51,7 +51,7 @@ deploy:
     on:
       branch: master
     api_key:
-      secure: kvwvA4clT64FDfanLoNcTLWpQlMGQ311zUfwAEljDwHhjtmFCy4O+gSZ2YrGTUYb
+      secure: RoNu0KbJqWNledqfHkctON53FTzzgNGVj7U6bpzwrC1MlEr5INEsP7FyEpEZBX1D
   - provider: GitHub
     on:
       branch: master
