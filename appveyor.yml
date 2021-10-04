@@ -8,7 +8,7 @@ skip_branch_with_pr: true
 skip_commits:
   message: /\[(skip ci|ci skip)\]/
 
-version: 1.7.0.{build}
+version: 1.7.1.{build}
 image: Visual Studio 2019
 
 install:
@@ -32,7 +32,7 @@ build_script:
   - dotnet build -c Release
 
 after_build:
-  - ps: dotnet pack -c Release --include-symbols --include-source --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.7.0
+  - ps: dotnet pack -c Release --no-build -o $env:APPVEYOR_BUILD_FOLDER /p:Version=1.7.1
 
 test_script:
   - dotnet test -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../../coverage.xml
@@ -47,15 +47,15 @@ artifacts:
   - path: ./*.nupkg
 
 deploy:
+  - provider: GitHub
+    on:
+      branch: master
+    release: 1.7.1
+    artifact: /.*\.nupkg/
+    auth_token:
+      secure: 03TOIdkL4AV7WgYpsFpMzzamDxMjvs4qtox1v+DBL5jqG3vZTht65qHSWMwNPIq8
   - provider: NuGet
     on:
       branch: master
     api_key:
       secure: RoNu0KbJqWNledqfHkctON53FTzzgNGVj7U6bpzwrC1MlEr5INEsP7FyEpEZBX1D
-  - provider: GitHub
-    on:
-      branch: master
-    release: 1.7.0
-    artifact: /.*\.nupkg/
-    auth_token:
-      secure: 03TOIdkL4AV7WgYpsFpMzzamDxMjvs4qtox1v+DBL5jqG3vZTht65qHSWMwNPIq8
