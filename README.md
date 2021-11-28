@@ -51,6 +51,22 @@ public class MyClass
 }
 ```
 
+or, if you are using C# 10 or newer (net6.0+) you can declare the suppression constants as global and not have to reference it again in every file where you need to use any of the constants.
+
+```csharp
+global using System.Diagnostics.CodeAnalysis;
+global using static Softlr.Suppress;
+
+[SuppressMessage(CODE_CRACKER, CC0001)]
+[SuppressMessage(FXCOP, CA1000)]
+[SuppressMessage(SONARQUBE, S100)]
+[SuppressMessage(STYLECOP, SA1001)]
+public class MyClass
+{
+    // ...
+}
+```
+
 When referencing `Softlr.Suppress` library in a project that creates a NuGet package the reference for this library doesn't need to be defined as a NuGet dependency.
 If you are generating NuGet packages with project files, this can be achieved with `PrivateAssets` metadata.
 
