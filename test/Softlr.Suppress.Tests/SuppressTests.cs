@@ -8,12 +8,23 @@ public class SuppressTests
         get
         {
             var reservedName = new List<string>
-                {
-                    nameof(CODE_CRACKER),
-                    nameof(SONARQUBE),
-                    nameof(STYLECOP),
-                    nameof(FXCOP)
-                };
+            {
+                nameof(CODE_CRACKER),
+                nameof(FXCOP),
+                nameof(MICROSOFT_DESIGN),
+                nameof(MICROSOFT_DOCUMENTATION),
+                nameof(MICROSOFT_GLOBALIZATION),
+                nameof(MICROSOFT_INTEROPERABILITY),
+                nameof(MICROSOFT_MAINTAINABILITY),
+                nameof(MICROSOFT_NAMING),
+                nameof(MICROSOFT_PERFORMANCE),
+                nameof(MICROSOFT_PUBLISH),
+                nameof(MICROSOFT_RELIABILITY),
+                nameof(MICROSOFT_SECURITY),
+                nameof(MICROSOFT_USAGE),
+                nameof(SONARQUBE),
+                nameof(STYLECOP)
+            };
             var constants = typeof(Suppress).GetFields(Public | Static | FlattenHierarchy).Where(x => x.IsLiteral)
                 .Where(x => !x.IsInitOnly).Where(x => !reservedName.Contains(x.Name));
             var data = new TheoryData<string, string>();
