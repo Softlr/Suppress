@@ -6,6 +6,7 @@
 This library allows easy suppression of C# code analyzers warnings by defining a bunch of contants for all of the rules. The following analyzers are supported:
 
 * [SonarQube](https://www.sonarqube.org/)
+* [Roslyn Analyzers](https://github.com/dotnet/roslyn-analyzers)
 * [FxCop](https://msdn.microsoft.com/en-us/library/bb429476.aspx)
 * [StyleCop.Analyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
 * [CodeCracker](https://github.com/code-cracker/code-cracker)
@@ -40,6 +41,22 @@ or use the `using static` to import all constants
 ```csharp
 using System.Diagnostics.CodeAnalysis;
 using static Softlr.Suppress;
+
+[SuppressMessage(CODE_CRACKER, CC0001)]
+[SuppressMessage(FXCOP, CA1000)]
+[SuppressMessage(SONARQUBE, S100)]
+[SuppressMessage(STYLECOP, SA1001)]
+public class MyClass
+{
+    // ...
+}
+```
+
+or, if you are using C# 10 or newer (net6.0+) you can declare the suppression constants as global and not have to reference it again in every file where you need to use any of the constants.
+
+```csharp
+global using System.Diagnostics.CodeAnalysis;
+global using static Softlr.Suppress;
 
 [SuppressMessage(CODE_CRACKER, CC0001)]
 [SuppressMessage(FXCOP, CA1000)]
