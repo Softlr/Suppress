@@ -264,6 +264,10 @@ namespace Softlr
             "S3011:Reflection should not be used to increase accessibility of classes, methods, or fields";
 
         public const string S3052 = "S3052:Members should not be initialized to default values";
+
+        public const string S3059 =
+            "S3059:Types should not have members with visibility set higher than the type's visibility";
+
         public const string S3060 = "S3060:is should not be used with this";
         public const string S3168 = "S3168:async methods should not return void";
         public const string S3169 = "S3169:Multiple OrderBy calls should not be used";
@@ -292,11 +296,13 @@ namespace Softlr
         public const string S3254 = "S3254:Default parameter values should not be passed as arguments";
         public const string S3256 = "S3256:string.IsNullOrEmpty should be used";
         public const string S3257 = "S3257:Declarations and initializations should be as concise as possible";
+        public const string S3260 = "S3260:Non-derived private classes and records should be sealed";
         public const string S3261 = "S3261:Namespaces should not be empty";
         public const string S3262 = "S3262:params should be used on overrides";
         public const string S3263 = "S3263:Static fields should appear in the order they must be initialized";
         public const string S3264 = "S3264:Events should be invoked";
         public const string S3265 = "S3265:Non-flags enums should not be used in bitwise operations";
+        public const string S3267 = "S3267:Loops should be simplified with LINQ expressions";
         public const string S3329 = "S3329:Cipher Block Chaining IVs should be unpredictable";
         public const string S3330 = "S3330:Creating cookies without the HttpOnly flag is security-sensitive";
         public const string S3343 = "S3343:Caller information parameters should come at the end of the parameter list";
@@ -557,7 +563,13 @@ namespace Softlr
             "S5766:Deserializing objects without performing data validation is security-sensitive";
 
         public const string S5773 = "S5773:Types allowed to be deserialized should be restricted";
+        public const string S5883 = "S5883:OS commands should not be vulnerable to argument injection attacks";
         public const string S6096 = "S6096:Extracting archives should not lead to zip slip vulnerabilities";
+        public const string S6287 = "S6287:HTTP responses should not be vulnerable to session fixation";
+
+        public const string S6350 =
+            "S6350:Constructing arguments of system commands from user input is security-sensitive";
+
         public const string S818 = "S818:Literal suffixes should be upper case";
 
         public const string S881 =
