@@ -6,6 +6,7 @@
 This library allows easy suppression of C# code analyzers warnings by defining a bunch of contants for all of the rules. The following analyzers are supported:
 
 * [SonarQube](https://www.sonarqube.org/)
+* [Roslyn Analyzers](https://github.com/dotnet/roslyn-analyzers)
 * [FxCop](https://msdn.microsoft.com/en-us/library/bb429476.aspx)
 * [StyleCop.Analyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
 * [CodeCracker](https://github.com/code-cracker/code-cracker)
