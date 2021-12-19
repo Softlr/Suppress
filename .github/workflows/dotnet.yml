@@ -40,8 +40,8 @@ jobs:
       - name: SonarCloud
         uses: highbyte/sonarscan-dotnet@v2.1.2
         with:
-          sonarProjectKey: Softlr.Suppress
-          sonarProjectName:  softlr.suppress
+          sonarProjectKey: softlr.suppress
+          sonarProjectName: Softlr.Suppress
           sonarOrganization: rayell-github
           dotnetTestArguments: --logger trx --output "./TestResults/" -p:CollectCoverage=true -p:CoverletOutputFormat="json%2copencover" -p:CoverletOutput="./TestResults/" -p:MergeWith="./TestResults/coverage.json"
           sonarBeginArguments: /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx"
