@@ -38,7 +38,7 @@ jobs:
         run: dotnet pack -c Release
       
       - name: SonarCloud
-        uses: highbyte/sonarscan-dotnet@2.1.2
+        uses: highbyte/sonarscan-dotnet@v2.1.2
         with:
           sonarProjectKey: Softlr.Suppress
           sonarProjectName:  softlr.suppress
