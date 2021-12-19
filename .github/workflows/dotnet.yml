@@ -43,5 +43,5 @@ jobs:
           sonarProjectKey: Softlr.Suppress
           sonarProjectName:  softlr.suppress
           sonarOrganization: rayell-github
-          dotnetTestArguments: --logger trx --output "../TestResults/" -p:CollectCoverage=true -p:CoverletOutputFormat="json%2copencover" -p:CoverletOutput="../TestResults/" -p:MergeWith="../TestResults/coverage.json"
+          dotnetTestArguments: --logger trx --output "./TestResults/" -p:CollectCoverage=true -p:CoverletOutputFormat="json%2copencover" -p:CoverletOutput="./TestResults/" -p:MergeWith="./TestResults/coverage.json"
           sonarBeginArguments: /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx"
