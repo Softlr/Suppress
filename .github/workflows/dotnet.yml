@@ -25,7 +25,7 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       
-      - name: Restore dependencies
+      - name: Restore
         run: dotnet restore
       
       - name: Build
@@ -34,7 +34,7 @@ jobs:
       - name: Test
         run: dotnet test --no-restore --verbosity normal
       
-      - name: Generate NuGet package
+      - name: Pack
         run: dotnet pack -c Release
       
       - name: SonarCloud
@@ -43,6 +43,5 @@ jobs:
           sonarProjectKey: Softlr.Suppress
           sonarProjectName:  softlr.suppress
           sonarOrganization: rayell-github
-          dotnetBuildArguments: ./src
-          dotnetTestArguments: ./src --logger trx --output "../TestResults/" -p:CollectCoverage=true -p:CoverletOutputFormat="json%2copencover" -p:CoverletOutput="../TestResults/" -p:MergeWith="../TestResults/coverage.json"
+          dotnetTestArguments: --logger trx --output "../TestResults/" -p:CollectCoverage=true -p:CoverletOutputFormat="json%2copencover" -p:CoverletOutput="../TestResults/" -p:MergeWith="../TestResults/coverage.json"
           sonarBeginArguments: /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx"
