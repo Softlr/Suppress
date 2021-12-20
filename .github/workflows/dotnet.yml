@@ -2,13 +2,9 @@ name: .NET
 
 on:
   push:
-    branches: [ develop, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ develop, master ]
-
-env:
-  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    branches: [ main ]
 
 jobs:
   build:
@@ -19,7 +15,9 @@ jobs:
         dotnet-version: [ '6.0.x' ]
     
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v1.7.2
         with:
@@ -45,3 +43,7 @@ jobs:
           sonarOrganization: rayell-github
           dotnetTestArguments: --logger trx --output "./TestResults/" -p:CollectCoverage=true -p:CoverletOutputFormat="json%2copencover" -p:CoverletOutput="./TestResults/" -p:MergeWith="./TestResults/coverage.json"
           sonarBeginArguments: /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx"
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
