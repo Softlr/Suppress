@@ -6,6 +6,9 @@
     <Authors>Softlr</Authors>
     <Description>Constants for easy suppression of C# analyzers warnings and errors.</Description>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageId>Softlr.Suppress</PackageId>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Softlr/Suppress</RepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <RootNamespace>Softlr</RootNamespace>
