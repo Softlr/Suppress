@@ -9,11 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ macos-latest, ubuntu-latest, windows-latest ]
-        dotnet-version: [ 6.0.x ]
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout
@@ -22,7 +18,7 @@ jobs:
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v1.7.2
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: 6.x.x
       
       - name: Restore
         run: dotnet restore
