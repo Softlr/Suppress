@@ -33,15 +33,15 @@ jobs:
       run: dotnet restore
     
     - name: Build
-      run: dotnet build -c Release /p:Version=${VERSION} --no-restore
+      run: dotnet build -c Release -p:Version=${VERSION} --no-restore
     
     - name: Test
-      run: dotnet test -c Release /p:Version=${VERSION} --no-restore  
+      run: dotnet test -c Release -p:Version=${VERSION} --no-restore  
     
     - name: Pack
-      run: dotnet pack -c Release /p:Version=${VERSION} --no-build --output . -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
+      run: dotnet pack -c Release -p:Version=${VERSION} -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg --no-build -o .
     
     - name: Push
-      run: dotnet nuget push Softlr.Suppress.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
+      run: dotnet nuget push Softlr.Suppress.${VERSION}.nupkg -s https://api.nuget.org/v3/index.json -k ${NUGET_TOKEN}
       env:
         NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
