@@ -3,7 +3,7 @@
     <TargetFrameworks>net40;netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
     <CodeAnalysisRuleSet>..\..\.sonarlint\softlr.suppressCSharp.ruleset</CodeAnalysisRuleSet>
     <LangVersion>latest</LangVersion>
-    <Authors>Softlr</Authors>    
+    <Authors>Softlr</Authors>
     <Description>Constants for easy suppression of C# analyzers warnings and errors.</Description>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageId>Softlr.Suppress</PackageId>
