@@ -4,7 +4,7 @@
     "Key": "softlr",
     "Name": "Softlr"
   },
-  "ProjectKey": "Softlr_Suppress",
+  "ProjectKey": "softlr.suppress",
   "ProjectName": "Suppress",
   "Profiles": {
     "CSharp": {

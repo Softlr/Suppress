@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <CodeAnalysisRuleSet>..\..\.sonarlint\softlr.suppressCSharp.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\.sonarlint\softlr.suppresscsharp.ruleset</CodeAnalysisRuleSet>
     <LangVersion>latest</LangVersion>
     <SonarQubeTestProject>false</SonarQubeTestProject>
     <RootNamespace>Softlr.Tests</RootNamespace>
