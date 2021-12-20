@@ -1,4 +1,4 @@
-name: "Release"
+name: Release
 
 on:
   push:
@@ -13,12 +13,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     
-    - name: Verify commit exists in origin/main
+    - name: Verify Commit
       run: |
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
         git branch --remote --contains | grep origin/main
     
-    - name: Set VERSION variable from tag
+    - name: Set VERSION
       run: echo "VERSION=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
       
     - name: Setup .NET
@@ -26,14 +26,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
       
-    - name: Restore
-      run: dotnet restore
-    
     - name: Build
-      run: dotnet build -c Release -p:Version=${VERSION} --no-restore
+      run: dotnet build -c Release -p:Version=${VERSION}
     
     - name: Test
-      run: dotnet test -c Release -p:Version=${VERSION} --no-restore  
+      run: dotnet test -c Release -p:Version=${VERSION}
     
     - name: Pack
       run: dotnet pack -c Release -p:Version=${VERSION} -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg --no-build -o .
