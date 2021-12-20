@@ -3,11 +3,14 @@ name: "Release"
 on:
   push:
     tags:
-    - "[0-9]+.[0-9]+.[0-9]+-preview[0-9][0-9][0-9]"
+    - "[0-9]+.[0-9]+.[0-9]+(-preview[0-9][0-9][0-9])?"
     
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: [ '6.0.x' ]
     
     steps:
     - name: Checkout
@@ -20,17 +23,25 @@ jobs:
     
     - name: Set VERSION variable from tag
       run: echo "VERSION=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+      
+    - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      uses: actions/setup-dotnet@v1.7.2
+      with:
+        dotnet-version: ${{ matrix.dotnet-version }}
+      
+    - name: Restore
+      run: dotnet restore
     
     - name: Build
-      run: dotnet build --configuration Release /p:Version=${VERSION}
+      run: dotnet build -c Release /p:Version=${VERSION} --no-restore
     
     - name: Test
-      run: dotnet test --configuration Release /p:Version=${VERSION} --no-build
+      run: dotnet test -c Release /p:Version=${VERSION} --no-restore  
     
     - name: Pack
-      run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
+      run: dotnet pack -c Release /p:Version=${VERSION} --no-build --output .
     
     - name: Push
-      run: dotnet nuget push Softlr.Suppress.${VERSION}.nupkg --source ttps://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
+      run: dotnet nuget push Softlr.Suppress.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
       env:
         NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
