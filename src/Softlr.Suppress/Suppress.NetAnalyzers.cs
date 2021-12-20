@@ -102,7 +102,10 @@ public static partial class Suppress
     public const string CA1823 = "CA1823:AvoidUnusedPrivateFieldsAnalyzer";
     public const string CA1824 = "CA1824:MarkAssembliesWithNeutralResourcesLanguageAnalyzer";
     public const string CA1825 = "CA1825:AvoidZeroLengthArrayAllocationsAnalyzer";
-    public const string CA1826 = "CA1826:DoNotUseEnumerableMethodsOnIndexableCollectionsInsteadUseTheCollectionDirectlyAnalyzer";
+
+    public const string CA1826 =
+        "CA1826:DoNotUseEnumerableMethodsOnIndexableCollectionsInsteadUseTheCollectionDirectlyAnalyzer";
+
     public const string CA1827 = "CA1827:UseCountProperlyAnalyzer";
     public const string CA1828 = "CA1828:UseCountProperlyAnalyzer";
     public const string CA1829 = "CA1829:UseCountProperlyAnalyzer";

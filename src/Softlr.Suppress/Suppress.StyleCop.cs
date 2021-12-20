@@ -33,8 +33,7 @@ public static partial class Suppress
     public const string SA1025 = "SA1025:Code should not contain multiple whitespace in a row";
 
     public const string SA1026 =
-        "SA1026:Code should not contain space after new or stackalloc keyword in implicitly typed array " +
-        "allocation";
+        "SA1026:Code should not contain space after new or stackalloc keyword in implicitly typed array allocation";
 
     public const string SA1027 = "SA1027:Use tabs correctly";
     public const string SA1028 = "SA1028:Code should not contain trailing whitespace";
@@ -171,8 +170,7 @@ public static partial class Suppress
     public const string SA1622 = "SA1622:Generic type parameter documentation should have text";
     public const string SA1623 = "SA1623:Property summary documentation should match accessors";
 
-    public const string SA1624 =
-        "SA1624:Property summary documentation should omit accessor with restricted access";
+    public const string SA1624 = "SA1624:Property summary documentation should omit accessor with restricted access";
 
     public const string SA1625 = "SA1625:Element documentation should not be copied and pasted";
     public const string SA1626 = "SA1626:Single-line comments should not use documentation style slashes";

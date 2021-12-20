@@ -441,10 +441,7 @@ public static partial class Suppress
     public const string S4050 = "S4050:Operators should be overloaded consistently";
     public const string S4052 = "S4052:Types should not extend outdated base types";
     public const string S4055 = "S4055:Literals should not be passed as localized parameters";
-
-    public const string S4056 =
-        "S4056:Overloads with a CultureInfo or an IFormatProvider parameter should be used";
-
+    public const string S4056 = "S4056:Overloads with a CultureInfo or an IFormatProvider parameter should be used";
     public const string S4057 = "S4057:Locales should be set for data types";
     public const string S4058 = "S4058:Overloads with a StringComparison parameter should be used";
     public const string S4059 = "S4059:Property names should not match get methods";
@@ -570,8 +567,8 @@ public static partial class Suppress
     public const string S818 = "S818:Literal suffixes should be upper case";
 
     public const string S881 =
-        "S881:Increment (++) and decrement (--) operators should not be used in a method call or mixed with " +
-        "other operators in an expression";
+        "S881:Increment (++) and decrement (--) operators should not be used in a method call or mixed with other " +
+        "operators in an expression";
 
     public const string S907 = "S907:goto statement should not be used";
     public const string S927 = "S927:Parameter names should match base declaration and other partial definitions";
