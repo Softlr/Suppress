@@ -20,7 +20,7 @@ jobs:
         dotnet-version: 6.0.x
       
     - name: SonarCloud
-      uses: highbyte/sonarscan-dotnet@v2
+      uses: highbyte/sonarscan-dotnet@v2.1.2
       with:
         sonarProjectKey: softlr.suppress
         sonarProjectName: Softlr.Suppress
