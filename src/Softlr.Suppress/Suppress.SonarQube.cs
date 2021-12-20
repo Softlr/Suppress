@@ -1,8 +1,5 @@
 namespace Softlr;
 
-using System;
-using System.Diagnostics.CodeAnalysis;
-
 [SuppressMessage(SONARQUBE, S2339)]
 public static partial class Suppress
 {
