@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RuleSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="SonarQube - Softlr.Suppress Softlr" Description="This rule set was automatically generated from SonarQube https://sonarcloud.io/profiles/show?key=AWETMlGEr86VThkHOK_x" ToolsVersion="14.0">
+<RuleSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="SonarQube - Suppress Softlr" Description="This rule set was automatically generated from SonarQube https://sonarcloud.io/profiles/show?key=AX3X8N99qZ6t5gDLLeD-" ToolsVersion="14.0">
   <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
     <Rule Id="S100" Action="Info" />
     <Rule Id="S1006" Action="Warning" />
