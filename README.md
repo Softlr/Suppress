@@ -1,6 +1,6 @@
 ![.NET](https://github.com/Softlr/Suppress/actions/workflows/dotnet.yml/badge.svg)
 ![SonarCloud](https://github.com/Softlr/Suppress/actions/workflows/sonarcloud.yml/badge.svg)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Softlr_Suppress&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Softlr_Suppress)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=softlr.suppress&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=softlr.suppress)
 
 # Description
 This library allows easy suppression of C# code analyzers warnings by defining a bunch of contants for all of the rules. The following analyzers are supported:
