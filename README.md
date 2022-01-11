@@ -1,5 +1,4 @@
 ![.NET](https://github.com/Softlr/Suppress/actions/workflows/dotnet.yml/badge.svg)
-![SonarCloud](https://github.com/Softlr/Suppress/actions/workflows/sonarcloud.yml/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=softlr.suppress&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=softlr.suppress)
 
 # Description
