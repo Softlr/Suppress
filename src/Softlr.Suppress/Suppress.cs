@@ -6,7 +6,6 @@ using System.Diagnostics.CodeAnalysis;
 [SuppressMessage(SONARQUBE, S2339)]
 public static partial class Suppress
 {
-    public const string FXCOP = "FxCop";
     public const string MICROSOFT_DESIGN = "Microsoft.Design";
     public const string MICROSOFT_DOCUMENTATION = "Microsoft.Documentation";
     public const string MICROSOFT_GLOBALIZATION = "Microsoft.Globalization";
