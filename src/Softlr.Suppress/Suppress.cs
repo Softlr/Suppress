@@ -17,5 +17,4 @@ public static partial class Suppress
     public const string MICROSOFT_USAGE = "Microsoft.Usage";
     public const string SONARQUBE = "SonarQube";
     public const string SONARCLOUD = "SonarCloud";
-    private const string DROPPED_RULE = "This rule has been dropped.";
 }
