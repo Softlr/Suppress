@@ -1,6 +1,5 @@
 namespace Softlr;
 
-using System;
 using System.Diagnostics.CodeAnalysis;
 
 [SuppressMessage(SONARQUBE, S2339)]
@@ -36,10 +35,6 @@ public static partial class Suppress
     public const string S1134 = "S1134:Track uses of FIXME tags";
     public const string S1135 = "S1135:Track uses of TODO tags";
     public const string S1144 = "S1144:Unused private types or members should be removed";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S1145 = "S1145:Useless if(true) {...} and if(false){...} blocks should be removed";
-
     public const string S1147 = "S1147:Exit methods should not be called";
     public const string S1151 = "S1151:switch case clauses should not have too many lines of code";
     public const string S1155 = "S1155:Any() should be used to test for emptiness";
@@ -92,10 +87,6 @@ public static partial class Suppress
     public const string S1451 = "S1451:Track lack of copyright and license headers";
     public const string S1479 = "S1479:switch statements should not have too many case clauses";
     public const string S1481 = "S1481:Unused local variables should be removed";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S1523 = "S1523:Dynamically executing code is security-sensitive";
-
     public const string S1541 = "S1541:Methods and properties should not be too complex";
     public const string S1607 = "S1607:Tests should not be ignored";
     public const string S1643 = "S1643:Strings should not be concatenated using '+' in a loop";
@@ -103,11 +94,6 @@ public static partial class Suppress
     public const string S1659 = "S1659:Multiple variables should not be declared on the same line";
     public const string S1694 = "S1694:An abstract class should have both abstract and concrete methods";
     public const string S1696 = "S1696:NullReferenceException should not be caught";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S1697 =
-        "S1697:Short-circuit logic should be used to prevent null pointer dereferences in conditionals";
-
     public const string S1698 = "S1698:== should not be used when Equals is overridden";
     public const string S1699 = "S1699:Constructors should only call non-overridable methods";
     public const string S1751 = "S1751:Loops with at most one iteration should be refactored";
@@ -128,25 +114,11 @@ public static partial class Suppress
     public const string S1994 = "S1994:for loop increment clauses should modify the loops' counters";
     public const string S2053 = "S2053:Hashes should include an unpredictable salt";
     public const string S2068 = "S2068:Hard-coded credentials are security-sensitive";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S2070 =
-        "S2070:SHA-1 and Message-Digest hash algorithms should not be used in secure contexts";
-
-    [Obsolete(DROPPED_RULE)]
     public const string S2076 = "S2076:OS commands should not be vulnerable to command injection attacks";
-
     public const string S2077 = "S2077:Formatting SQL queries is security-sensitive";
-
-    [Obsolete(DROPPED_RULE)]
     public const string S2078 = "S2078:LDAP queries should not be vulnerable to injection attacks";
-
-    [Obsolete(DROPPED_RULE)]
     public const string S2083 = "S2083:I/O function calls should not be vulnerable to path injection attacks";
-
-    [Obsolete(DROPPED_RULE)]
     public const string S2091 = "S2091:XPath expressions should not be vulnerable to injection attacks";
-
     public const string S2092 = "S2092:Creating cookies without the secure flag is security-sensitive";
     public const string S2114 = "S2114:Collections should not be passed as arguments to their own methods";
     public const string S2115 = "S2115:A secure password should be used when connecting to a database";
@@ -179,10 +151,6 @@ public static partial class Suppress
     public const string S2257 = "S2257:Using non-standard cryptographic algorithms is security-sensitive";
     public const string S2259 = "S2259:Null pointers should not be dereferenced";
     public const string S2275 = "S2275:Composite format strings should not lead to unexpected behavior at runtime";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S2278 = "S2278:Neither DES (Data Encryption Standard) nor DESede (3DES) should be used";
-
     public const string S2290 = "S2290:Field-like events should not be virtual";
     public const string S2291 = "S2291:Overflow checking should not be disabled for Enumerable.Sum";
     public const string S2292 = "S2292:Trivial properties should be auto-implemented";
@@ -215,10 +183,7 @@ public static partial class Suppress
     public const string S2583 = "S2583:Conditionally executed code should be reachable";
     public const string S2589 = "S2589:Boolean expressions should not be gratuitous";
     public const string S2612 = "S2612:Setting loose file permissions is security-sensitive";
-
-    [Obsolete(DROPPED_RULE)]
     public const string S2631 = "S2631:Regular expressions should not be vulnerable to Denial of Service attacks";
-
     public const string S2674 = "S2674:The length returned from a stream read should be checked";
     public const string S2681 = "S2681:Multiline blocks should be enclosed in curly braces";
     public const string S2688 = "S2688:NaN should not be used in comparisons";
@@ -230,11 +195,6 @@ public static partial class Suppress
     public const string S2743 = "S2743:Static fields should not be used in generic types";
     public const string S2755 = "S2755:XML parsers should not be vulnerable to XXE attacks";
     public const string S2757 = "S2757:=+ should not be used instead of +=";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S2758 =
-        "S2758:The ternary operator should not return the same value regardless of the condition";
-
     public const string S2760 = "S2760:Sequential tests should not check the same condition";
     public const string S2761 = "S2761:Doubled prefix operators !! and ~~ should not be used";
     public const string S2857 = "S2857:SQL keywords should be delimited by whitespace";
@@ -356,10 +316,6 @@ public static partial class Suppress
     public const string S3626 = "S3626:Jump statements should not be redundant";
     public const string S3649 = "S3649:Database queries should not be vulnerable to injection attacks";
     public const string S3655 = "S3655:Empty nullable value should not be accessed";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S3693 = "S3693:Exception constructors should not throw exceptions";
-
     public const string S3717 = "S3717:Track use of NotImplementedException";
     public const string S3776 = "S3776:Cognitive Complexity of methods should not be too high";
     public const string S3869 = "S3869:SafeHandle.DangerousGetHandle should not be called";
@@ -451,10 +407,6 @@ public static partial class Suppress
     public const string S4069 = "S4069:Operator overloads should have named alternatives";
     public const string S4070 = "S4070:Non-flags enums should not be marked with FlagsAttribute";
     public const string S4136 = "S4136:Method overloads should be grouped together";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S4142 = "S4142:Duplicate values should not be passed as arguments";
-
     public const string S4143 = "S4143:Collection elements should not be replaced unconditionally";
     public const string S4144 = "S4144:Methods should not have identical implementations";
     public const string S4158 = "S4158:Empty collections should not be accessed or iterated";
@@ -475,10 +427,6 @@ public static partial class Suppress
     public const string S4423 = "S4423:Weak SSL/TLS protocols should not be used";
     public const string S4426 = "S4426:Cryptographic keys should be robust";
     public const string S4428 = "S4428:PartCreationPolicyAttribute should be used with ExportAttribute";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S4432 = "S4432:AES encryption algorithm should be used with secured mode";
-
     public const string S4433 = "S4433:LDAP connections should be authenticated";
     public const string S4456 = "S4456:Parameter validation in yielding methods should be wrapped";
     public const string S4457 = "S4457:Parameter validation in async/await methods should be wrapped";
@@ -490,10 +438,6 @@ public static partial class Suppress
         "S4507:Delivering code in production with debug features activated is security-sensitive";
 
     public const string S4524 = "S4524:default clauses should be first or last";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S4529 = "S4529:Exposing HTTP endpoints is security-sensitive";
-
     public const string S4564 = "S4564:ASP.NET HTTP request validation feature should not be disabled";
     public const string S4581 = "S4581:new Guid() should not be used";
 
@@ -505,26 +449,12 @@ public static partial class Suppress
     public const string S4635 =
         "S4635:String offset-based methods should be preferred for finding substrings from offsets";
 
-    [Obsolete(DROPPED_RULE)]
-    public const string S4721 = "S4721:Executing OS commands is security-sensitive";
-
     public const string S4784 = "S4784:Using regular expressions is security-sensitive";
     public const string S4787 = "S4787:Encrypting data is security-sensitive";
     public const string S4790 = "S4790:Using weak hashing algorithms is security-sensitive";
     public const string S4792 = "S4792:Configuring loggers is security-sensitive";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S4797 = "S4797:Handling files is security-sensitive";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S4817 = "S4817:Executing XPath expressions is security-sensitive";
-
     public const string S4818 = "S4818:Using Sockets is security-sensitive";
     public const string S4823 = "S4823:Using command line arguments is security-sensitive";
-
-    [Obsolete(DROPPED_RULE)]
-    public const string S4825 = "S4825:Sending HTTP requests is security-sensitive";
-
     public const string S4829 = "S4829:Reading the Standard Input is security-sensitive";
     public const string S4830 = "S4830:Server certificates should be verified during SSL/TLS connections";
     public const string S4834 = "S4834:Controlling permissions is security-sensitive";
