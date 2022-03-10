@@ -18,6 +18,5 @@ public static partial class Suppress
     public const string MICROSOFT_SECURITY = "Microsoft.Security";
     public const string MICROSOFT_USAGE = "Microsoft.Usage";
     public const string SONARQUBE = "SonarQube";
-    public const string STYLECOP = "StyleCop.CSharp";
     private const string DROPPED_RULE = "This rule has been dropped.";
 }
