@@ -9,8 +9,6 @@ public class SuppressTests
         {
             var reservedName = new List<string>
             {
-                nameof(CODE_CRACKER),
-                nameof(FXCOP),
                 nameof(MICROSOFT_DESIGN),
                 nameof(MICROSOFT_DOCUMENTATION),
                 nameof(MICROSOFT_GLOBALIZATION),
@@ -23,7 +21,7 @@ public class SuppressTests
                 nameof(MICROSOFT_SECURITY),
                 nameof(MICROSOFT_USAGE),
                 nameof(SONARQUBE),
-                nameof(STYLECOP)
+                nameof(SONARCLOUD)
             };
             var constants = typeof(Suppress).GetFields(Public | Static | FlattenHierarchy).Where(x => x.IsLiteral)
                 .Where(x => !x.IsInitOnly).Where(x => !reservedName.Contains(x.Name));
