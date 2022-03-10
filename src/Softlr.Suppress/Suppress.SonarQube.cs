@@ -111,10 +111,7 @@ public static partial class Suppress
     public const string S1698 = "S1698:== should not be used when Equals is overridden";
     public const string S1699 = "S1699:Constructors should only call non-overridable methods";
     public const string S1751 = "S1751:Loops with at most one iteration should be refactored";
-
-    public const string S1764 =
-        "S1764:Identical expressions should not be used on both sides of a binary operator";
-
+    public const string S1764 = "S1764:Identical expressions should not be used on both sides of a binary operator";
     public const string S1821 = "S1821:switch statements should not be nested";
     public const string S1848 = "S1848:Objects should not be created to be dropped immediately without being used";
     public const string S1854 = "S1854:Unused assignments should be removed";
@@ -170,6 +167,7 @@ public static partial class Suppress
     public const string S2201 = "S2201:Return values from functions without side effects should not be ignored";
     public const string S2219 = "S2219:Runtime type checking should be simplified";
     public const string S2221 = "S2221:Exception should not be caught when not required by called methods";
+    public const string S2222 = "S2222:Locks should be released";
     public const string S2223 = "S2223:Non-constant static fields should not be visible";
     public const string S2225 = "S2225:ToString() method should not return null";
     public const string S2228 = "S2228:Console logging should not be used";
@@ -555,10 +553,7 @@ public static partial class Suppress
     public const string S5659 = "S5659:JWT should be signed and verified with strong cipher algorithms";
     public const string S5693 = "S5693:Allowing requests with excessive content length is security-sensitive";
     public const string S5753 = "S5753:Disabling ASP.NET Request Validation feature is security-sensitive";
-
-    public const string S5766 =
-        "S5766:Deserializing objects without performing data validation is security-sensitive";
-
+    public const string S5766 = "S5766:Deserializing objects without performing data validation is security-sensitive";
     public const string S5773 = "S5773:Types allowed to be deserialized should be restricted";
     public const string S5883 = "S5883:OS commands should not be vulnerable to argument injection attacks";
     public const string S6096 = "S6096:Extracting archives should not lead to zip slip vulnerabilities";
@@ -567,6 +562,7 @@ public static partial class Suppress
     public const string S6350 =
         "S6350:Constructing arguments of system commands from user input is security-sensitive";
 
+    public const string S6354 = "S6354:Use a testable date/time provider.";
     public const string S818 = "S818:Literal suffixes should be upper case";
 
     public const string S881 =
